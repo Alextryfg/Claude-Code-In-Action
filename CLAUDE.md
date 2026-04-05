@@ -64,3 +64,8 @@ JWT-based, cookie-stored (`auth-token`). `src/lib/auth.ts` signs/verifies tokens
 - Prisma client is generated to `src/generated/prisma` (not `node_modules`).
 - Tests use Vitest + jsdom + React Testing Library; test files live in `__tests__/` directories alongside the code they test.
 - UI components in `src/components/ui/` are shadcn/ui primitives (Radix + Tailwind). Don't modify them directly.
+- For DB structure, refer to `prisma/schema.prisma`.
+
+## Code style
+
+- Add comments only when the logic is genuinely non-obvious. No redundant or descriptive comments.
